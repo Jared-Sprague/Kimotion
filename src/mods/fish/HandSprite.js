@@ -1,5 +1,5 @@
 import Sprite from "mods/fish/Sprite";
-import { HAND_IMG_SWAP_DELAY } from "mods/fish/consts.js";
+import { HAND_IMG_SWAP_DELAY } from "mods/fish/consts";
 
 export default class HandSprite extends Sprite {
     constructor() {

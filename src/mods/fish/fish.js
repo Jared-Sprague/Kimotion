@@ -10,7 +10,7 @@ import SharkFishSprite from 'mods/fish/SharkFishSprite';
 import HandSprite from 'mods/fish/HandSprite';
 import CoinParticle from 'mods/fish/CoinParticle';
 import ChestSprite from 'mods/fish/ChestSprite';
-import { LEFT, RIGHT, SHARK, GOLD, BLUE, PURPLE, RED, HAND_IMG_SWAP_DELAY, MESSAGE_FRAMES, WAIT_SOUND_LOAD_FRAMES, TIME_LIMIT, HIGHSCORE_TIME } from "mods/fish/consts.js";
+import { LEFT, RIGHT, SHARK, GOLD, BLUE, PURPLE, RED, HAND_IMG_SWAP_DELAY, MESSAGE_FRAMES, WAIT_SOUND_LOAD_FRAMES, TIME_LIMIT, HIGHSCORE_TIME } from "mods/fish/consts";
 
 var fishes = [];
 var score = 0;

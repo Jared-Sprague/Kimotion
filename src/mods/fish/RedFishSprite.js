@@ -1,6 +1,6 @@
 import FishSprite from "mods/fish/FishSprite";
-import { randomIntInclusive } from "mods/fish/utils.js";
-import { RED } from "mods/fish/consts.js";
+import { randomIntInclusive } from "mods/fish/utils";
+import { RED } from "mods/fish/consts";
 
 export default class RedFishSprite extends FishSprite {
     constructor() {

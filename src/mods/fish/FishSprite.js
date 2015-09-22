@@ -1,6 +1,6 @@
 import Sprite from "mods/fish/Sprite";
-import { randomIntInclusive } from "mods/fish/utils.js";
-import { LEFT, RIGHT, BLUE, RED, PURPLE, SHARK } from "mods/fish/consts.js";
+import { randomIntInclusive } from "mods/fish/utils";
+import { LEFT, RIGHT } from "mods/fish/consts";
 
 export default class FishSprite extends Sprite {
     constructor() {

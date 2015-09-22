@@ -1,4 +1,4 @@
-import { randomIntInclusive } from "mods/fish/utils.js";
+import { randomIntInclusive } from "mods/fish/utils";
 
 export default class Sprite {
     constructor() {
