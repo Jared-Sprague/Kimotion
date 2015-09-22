@@ -350,7 +350,6 @@ export default class fishMod extends mod {
         for (let i = 0; i < len; i++) {
             let obj = this.highScores[i];
             let h_score = obj.score;
-            //TODO: handle the case when the current score is equal to a high-score
             if (!currentScoreShown && score >= h_score) {
                 // change text color to yellow to highlight users score
                 fill(255, 204, 0);
