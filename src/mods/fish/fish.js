@@ -10,7 +10,7 @@ import SharkFishSprite from 'mods/fish/SharkFishSprite';
 import HandSprite from 'mods/fish/HandSprite';
 import CoinParticle from 'mods/fish/CoinParticle';
 import ChestSprite from 'mods/fish/ChestSprite';
-import { LEFT, RIGHT, SHARK, GOLD, BLUE, PURPLE, RED, HAND_IMG_SWAP_DELAY, MESSAGE_FRAMES, WAIT_SOUND_LOAD_FRAMES, TIME_LIMIT, HIGHSCORE_TIME } from "mods/fish/consts";
+import { LEFT, RIGHT, SHARK, GOLD, BLUE, PURPLE, RED, HAND_IMG_SWAP_DELAY, MESSAGE_FRAMES, WAIT_SOUND_LOAD_FRAMES, TIME_LIMIT, HIGH_SCORE_TIME } from "mods/fish/consts";
 
 var fishes = [];
 var score = 0;
@@ -129,9 +129,9 @@ export default class fishMod extends mod {
         }
 
         // check the time remaining
-        if (this.remaining - HIGHSCORE_TIME <= 30 && this.gameEndingWarning == 'none') {
+        if (this.remaining - HIGH_SCORE_TIME <= 30 && this.gameEndingWarning == 'none') {
             this.gameEndingWarning = 'display';
-        } else if (this.remaining <= HIGHSCORE_TIME && this.showHighScoreTable == 'none' && params.enableApi) {
+        } else if (this.remaining <= HIGH_SCORE_TIME && this.showHighScoreTable == 'none' && params.enableApi) {
             sound_underwater.stop();
             sound_cheer.play();
             this.postScore();
@@ -391,7 +391,7 @@ export default class fishMod extends mod {
         fill(255); // text color white
 
         // Draw to the right of the chest
-        var time = (this.remaining - HIGHSCORE_TIME);
+        var time = (this.remaining - HIGH_SCORE_TIME);
         if (time < 0) {
             time = 0;
         }

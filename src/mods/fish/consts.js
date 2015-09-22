@@ -9,4 +9,4 @@ export const HAND_IMG_SWAP_DELAY = 10;
 export const MESSAGE_FRAMES = 100;
 export const WAIT_SOUND_LOAD_FRAMES = 50;
 export const TIME_LIMIT = 70;
-export const HIGHSCORE_TIME = 10;
+export const HIGH_SCORE_TIME = 10;
