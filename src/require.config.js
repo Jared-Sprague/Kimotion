@@ -4,6 +4,7 @@ requirejs.config({
     baseUrl: '.',
     waitSeconds: Infinity,
     paths: {
+        app: 'app',
         shaders: 'shaders',
         lodash: 'lib/lodash-amd/compat/main',
         text: 'lib/requirejs-text/text',
@@ -18,10 +19,10 @@ requirejs.config({
         tinycolor: 'lib/tinycolor/tinycolor',
         zepto: 'lib/zepto/zepto',
         p5: 'lib/p5.js/lib/p5.min',
-        p5sound: 'lib/p5.js/lib/addons/p5.sound',
-        p5js: 'lib/p5.js/docs/js/p5',
+        'p5.sound': 'lib/p5.js/lib/addons/p5.sound',
         nprogress: 'lib/nprogress/nprogress',
-        'p5.play': 'lib/p5.play/lib/p5.play'
+        'p5.play': 'lib/p5.play/lib/p5.play',
+        modernizr: 'modernizr-custom.min'
     },
     shim: {
         threejs: {
